@@ -2,7 +2,9 @@
 
 > Browser extension that adds a simple filter to GitHub issues page to show issues with or without linked pull requests
 
-Working with GitHub issues often requires identifying which issues have associated pull requests and which don't. This extension makes that task easy with a simple dropdown filter in the GitHub issues toolbar.
+![noPR integration](screenshots/github-toolbar.png)
+
+Working with open source projects often requires identifying which issues have associated pull requests and which don't, to avoid multiple people working on the same issue. Github supports this filtering with the `linked:pr` search syntax, but it can be cumbersome to remember and type out each time. This extension makes that task easy with a simple dropdown filter in the GitHub issues toolbar. 
 
 ## Install
 
@@ -18,24 +20,24 @@ Or [install locally](#install-locally) from source.
 ## Features
 
 <table>
-  <tr>
+    <tr>
     <th width="50%">
-      <p>Filter issues with linked PRs</p>
-      <p><img src="screenshots/with-pr-filter.png"></p>
+      <p>Seamless integration with GitHub's UI</p>
+      <p><img src="screenshots/github-integration.png" width="300" height="200" style="object-fit: contain;"></p>
     </th>
     <th width="50%">
-      <p>Filter issues without linked PRs</p>
-      <p><img src="screenshots/without-pr-filter.png"></p>
+      <p>Easy dropdown menu with one-click filtering</p>
+      <p><img src="screenshots/menu.png" width="300" height="200" style="object-fit: contain;"></p>
     </th>
   </tr>
   <tr>
     <th width="50%">
-      <p>Seamless integration with GitHub's UI</p>
-      <p><img src="screenshots/default-view.png"></p>
+      <p>Filter issues with (or without) linked PRs</p>
+      <p><img src="screenshots/filter.png" width="300" height="200" style="object-fit: contain;"></p>
     </th>
     <th width="50%">
-      <p>Works with all GitHub themes</p>
-      <p><img src="screenshots/dark-mode.png"></p>
+      <p>Supports refined-github Bugs tab</p>
+      <p><img src="screenshots/refined-github-support.png" width="300" height="200" style="object-fit: contain;"></p>
     </th>
   </tr>
 </table>
