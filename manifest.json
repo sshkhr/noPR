@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "noPR: Filter GitHub Issues with(out) Linked PR",
+  "version": "1.0",
+  "description": "Filter GitHub issues based on whether or not they have a linked pull request",
+  "icons": {
+    "16": "icons/noPR-16.png",
+    "32": "icons/noPR-32.png",
+    "64": "icons/noPR-64.png",
+    "128": "icons/noPR-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["activeTab"],
+  "host_permissions": ["*://github.com/*"]
+}
