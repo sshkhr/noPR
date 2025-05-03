@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "noPR: Filter GitHub Issues with(out) Linked PR",
+  "name": "noPR:Filter GitHub Issues with(out) Linked PR",
   "version": "1.0",
   "description": "Filter GitHub issues based on whether or not they have a linked pull request",
   "icons": {
@@ -17,5 +17,10 @@
     }
   ],
   "permissions": ["activeTab"],
-  "host_permissions": ["*://github.com/*"]
+  "host_permissions": ["*://github.com/*"],
+  "browser_specific_settings": {
+  "gecko": {
+    "id": "contactshashankshekhar-2@gmail.com"
+  }
+}
 }

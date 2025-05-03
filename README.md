@@ -8,12 +8,12 @@ Working with open source projects often requires identifying which issues have a
 
 ## Install
 
-[link-chrome]: https://chrome.google.com/webstore/detail/your-extension-id 'Version published on Chrome Web Store'
-[link-firefox]: https://addons.mozilla.org/firefox/addon/your-extension-id/ 'Version published on Mozilla Add-ons'
+[link-chrome]: https://chrome.google.com/webstore/detail/dlnlangdknflcflghjooahacifckneeg 'Version published on Chrome Web Store'
+[link-firefox]: https://addons.mozilla.org/firefox/addon/nopr-filter/ 'Version published on Mozilla Add-ons'
 
-[<img src="https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/chrome/chrome.svg" width="48" alt="Chrome" valign="middle">][link-chrome] [<img valign="middle" src="https://img.shields.io/chrome-web-store/v/your-extension-id.svg?label=%20">][link-chrome] and other Chromium browsers
+[<img src="https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/chrome/chrome.svg" width="48" alt="Chrome" valign="middle">][link-chrome] [<img valign="middle" src="https://img.shields.io/chrome-web-store/v/dlnlangdknflcflghjooahacifckneeg.svg?label=%20">][link-chrome] and other Chromium browsers
 
-[<img src="https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/firefox/firefox.svg" width="48" alt="Firefox" valign="middle">][link-firefox] [<img valign="middle" src="https://img.shields.io/amo/v/your-extension-id.svg?label=%20">][link-firefox]
+[<img src="https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/firefox/firefox.svg" width="48" alt="Firefox" valign="middle">][link-firefox] [<img valign="middle" src="https://img.shields.io/amo/v/nopr-filter.svg?label=%20">][link-firefox]
 
 Or [install locally](#install-locally) from source.
 
@@ -23,47 +23,39 @@ Or [install locally](#install-locally) from source.
     <tr>
     <th width="50%">
       <p>Seamless integration with GitHub's UI</p>
-      <p><img src="screenshots/github-integration.png" width="300" height="200" style="object-fit: contain;"></p>
+      <p><img src="screenshots/github-integration.png" width="320" height="200" style="object-fit: contain;"></p>
     </th>
     <th width="50%">
       <p>Easy dropdown menu with one-click filtering</p>
-      <p><img src="screenshots/menu.png" width="300" height="200" style="object-fit: contain;"></p>
+      <p><img src="screenshots/menu.png" width="320" height="200" style="object-fit: contain;"></p>
     </th>
   </tr>
   <tr>
     <th width="50%">
       <p>Filter issues with (or without) linked PRs</p>
-      <p><img src="screenshots/filter.png" width="300" height="200" style="object-fit: contain;"></p>
+      <p><img src="screenshots/filter.png" width="320" height="200" style="object-fit: contain;"></p>
     </th>
     <th width="50%">
       <p>Supports refined-github Bugs tab</p>
-      <p><img src="screenshots/refined-github-support.png" width="300" height="200" style="object-fit: contain;"></p>
+      <p><img src="screenshots/refined-github-support.png" width="320" height="200" style="object-fit: contain;"></p>
     </th>
   </tr>
 </table>
 
 ## How It Works
 
-- 🔍 Adds a dropdown filter button to GitHub issues pages
-- 🟢 Easily find issues with linked pull requests
-- 🔴 Quickly identify issues without linked pull requests
-- 🔄 Works with GitHub's modern SPA navigation
-- 🎨 Seamlessly matches GitHub's design in both light and dark modes
+After installation, the extension adds a visually distinctive pull request icon to GitHub's issue toolbar.
 
-The extension adds a visually distinctive red and green icon to GitHub's issue toolbar. Clicking it reveals a dropdown with three options:
-
-1. **No Filter**: Show all issues (default)
-2. **Issues with Linked PR**: Show only issues that have associated pull requests
-3. **Issues w/o Linked PR**: Show only issues that don't have associated pull requests
+1. Navigate to any GitHub repository's issues page
+2. Look for the pull request icon in the issues toolbar
+3. Click it to show the dropdown menu
+4. Select your desired filtering options
+    - **No Filter**: Show all issues (default)
+    - **Issues with Linked PR**: Show only issues that have associated pull requests
+    - **Issues w/o Linked PR**: Show only issues that don't have associated pull requests
 
 The filter works by adding `linked:pr` or `-linked:pr` to GitHub's search query, making use of GitHub's built-in search functionality.
 
-## Usage
-
-1. Navigate to any GitHub repository's issues page
-2. Look for the red and green pull request icon in the toolbar
-3. Click it to show the dropdown menu
-4. Select one of the three filtering options
 
 ## Install Locally
 
